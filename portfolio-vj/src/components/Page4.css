@@ -1,6 +1,6 @@
-/* Contact Section */
+
 .contact-wrapper {
-  background: linear-gradient(135deg, #060b13 0%, #0f1419 100%);
+  /* background: linear-gradient(135deg, #060b13 0%, #0f1419 100%); */
   min-height: 100vh;
   padding: 80px 0;
 }

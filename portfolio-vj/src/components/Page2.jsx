@@ -2,7 +2,7 @@
 // import React from 'react';
 // import vjpf from './vjpf.jpg';
 import React from 'react';
-import vjpf from './vjpf.jpg';
+import vjpf from './vjpf.JPG';
 
 function Page2() {
   const skills = ['Java', 'JavaScript', 'React', 'HTML', 'CSS', 'Cloud', 'AI/ML'];

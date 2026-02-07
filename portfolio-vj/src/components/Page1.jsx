@@ -7,10 +7,13 @@ import smallgif from './smallgif.mp4';
 import Page2 from './Page2';
 import Page3 from './Page3';
 import './Page1.css';
+import Page4 from './Page4';
 
 function Page1() {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
   const location = useLocation();
 
   useEffect(() => {
@@ -18,7 +21,9 @@ function Page1() {
       aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
     } else if (location.hash === '#projects') {
       projectsRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }
+    }else if (location.hash === '#contact') {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }
   }, [location]);
 
   return (
@@ -37,6 +42,9 @@ function Page1() {
             <a href="#projects" className="nav-link">
               Projects
             </a>
+            <a href="#contact" className="nav-link">
+              Contact
+            </a> 
           </div>
         </div>
       </nav>
@@ -87,6 +95,11 @@ function Page1() {
       <section id="projects" ref={projectsRef}>
         <Page3 />
       </section>
+
+      <section id="contact" ref={contactRef}>
+       <Page4 />
+      </section>
+      
     </div>
     
   );
