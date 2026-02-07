@@ -23,7 +23,7 @@ function Page1() {
 
   return (
     <div className="page-wrapper">
-      {/* NAVBAR */}
+     
       <nav className="navbar-custom">
         <div className="nav-container">
           <a className="brand" href="/">
@@ -41,7 +41,7 @@ function Page1() {
         </div>
       </nav>
 
-      {/* HERO SECTION */}
+     
       <section className="hero">
         <div className="hero-content">
           <div className="text-area">
@@ -78,12 +78,12 @@ function Page1() {
         </div>
       </section>
 
-      {/* ABOUT SECTION */}
+     
       <section id="about" ref={aboutRef}>
         <Page2 />
       </section>
 
-      {/* PROJECTS SECTION */}
+      
       <section id="projects" ref={projectsRef}>
         <Page3 />
       </section>
